@@ -1,0 +1,42 @@
+Pour le bonus, nous avons amélioré le jeu de la façon suivante:
+
+
+Nouveau mode de jeu possible (space)
+------------------------------------
+* Nous avons créé un mode de jeu dans l'espace avec un personnage différent.
+* Pour cela, nous avons implémenté de l'héritage pour le Level et le Jumper,
+afin d'avoir tout le code de base dans la classe abstraite, puis que les
+classes enfants puissent gérer les quelques détails restant, et surtout faire
+de l'override sur certaines méthodes pour changer quelques aspects du jeu.
+* Dans ce mode:
+    - Il y a un nouveau personnage (Nyan Cat pour rigoler un peu) qui accélère
+        plus vite vers la droite et la gauche et rebondit plus haut sur les
+        plateformes vertes.
+    - Le décor est une image de l'espace.
+    - Les plateformes sont des images.
+    - Les bulles sont plus petites, plus rapides et de différentes couleurs
+        pour s'agencer avec le décor.
+* Nous avons donc maximisé la réutilisation du code tout en changeant
+complètement l'aspect du jeu et ainsi que quelques détails de logique.
+
+
+
+Création d'un menu d'accueil
+----------------------------
+* Nous avons dû créer une nouvelle scene dans HighSeaTower pour afficher ce menu.
+* Nous avons créé des boutons avec différentes options, et avons dû ajouter la
+gestion d'événements lors des clics sur les boutons.
+* Nous avons aussi dû gérer le passage d'une scene à une autre dans la vue.
+
+
+
+Création d'un écran de fin de jeu
+---------------------------------
+* Nous avons aussi dû créer une nouvelle scene et gérer les événements clavier
+pour cette scene.
+* Nous affichons le score ici, donc nous avons dû trouver une façon de ne pas
+perdre le score en fin de partie, et de s'assurer qu'il ne continue pas à
+augmenter après la fin de la partie mais avant que l'on restart.
+
+
+
